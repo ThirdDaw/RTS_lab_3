@@ -45,7 +45,7 @@ training_inputs.append(np.array(D))
 
 label = np.array([1, 0, 0, 0])
 
-perceptron = Perceptron(2)
+perceptron = Perceptron(2, learning_rate=speeds[4])
 perceptron.train(training_inputs, label)
 
 print(perceptron.predict(np.array([3, 4])))
